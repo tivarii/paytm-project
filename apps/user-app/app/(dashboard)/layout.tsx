@@ -1,3 +1,4 @@
+import { Press_Start_2P } from "next/font/google";
 import { SidebarItem } from "../../components/SidebarItem";
 
 export default function Layout({
@@ -11,7 +12,10 @@ export default function Layout({
             <div>
                 <SidebarItem href={"/dashboard"} icon={<HomeIcon />} title="Home" />
                 <SidebarItem href={"/transfer"} icon={<TransferIcon />} title="Transfer" />
-                <SidebarItem href={"/transactions"} icon={<TransactionsIcon />} title="Transactions" />
+                <SidebarItem href={"/transactions"} icon={<TransactionsIcon />} 
+                title="Transactions" />
+                <SidebarItem href={"/p2p"} icon={<TransactionsIcon />} 
+                title="p2p" />
             </div>
         </div>
             {children}
